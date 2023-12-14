@@ -21,3 +21,13 @@ POST /index_name/_doc/document_id
   "field_name": "field_value"
 }
 **************************************************
+4. Searching Documents with Match Query :-
+GET /index_name/_search
+{
+  "query": {
+    "match": {
+      "field_name": "search_term"
+    }
+  }
+}
+**************************************************
