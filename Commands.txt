@@ -2,3 +2,16 @@
 1. Index Creation :- 
 PUT /index_name
 **************************************************
+2. Index Creation with Settings and Mappings :-
+PUT /index_name
+{
+  "settings": {
+    "number_of_shards": 1
+  },
+  "mappings": {
+    "properties": {
+      "field_name": { "type": "text" }
+    }
+  }
+}
+**************************************************
