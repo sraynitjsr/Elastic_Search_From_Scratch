@@ -15,3 +15,9 @@ PUT /index_name
   }
 }
 **************************************************
+3. Indexing Documents :-
+POST /index_name/_doc/document_id
+{
+  "field_name": "field_value"
+}
+**************************************************
