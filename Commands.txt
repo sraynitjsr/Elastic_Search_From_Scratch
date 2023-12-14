@@ -31,3 +31,15 @@ GET /index_name/_search
   }
 }
 **************************************************
+5. Aggregations - Average of Numeric Field :-
+GET /index_name/_search
+{
+  "aggs": {
+    "average_field": {
+      "avg": {
+        "field": "numeric_field"
+      }
+    }
+  }
+}
+**************************************************
