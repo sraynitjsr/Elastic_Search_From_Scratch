@@ -43,3 +43,19 @@ GET /index_name/_search
   }
 }
 **************************************************
+6. Filtering Documents :-
+GET /index_name/_search
+{
+  "query": {
+    "bool": {
+      "filter": {
+        "range": {
+          "numeric_field": {
+            "gte": 50
+          }
+        }
+      }
+    }
+  }
+}
+**************************************************
