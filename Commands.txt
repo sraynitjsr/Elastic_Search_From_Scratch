@@ -59,3 +59,11 @@ GET /index_name/_search
   }
 }
 **************************************************
+7. Sorting Search Results :-
+GET /index_name/_search
+{
+  "sort": [
+    { "field_name": { "order": "asc" } }
+  ]
+}
+**************************************************
