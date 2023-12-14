@@ -67,3 +67,11 @@ GET /index_name/_search
   ]
 }
 **************************************************
+8. Updating Documents :-
+POST /index_name/_update/document_id
+{
+  "doc": {
+    "field_name": "new_value"
+  }
+}
+**************************************************
