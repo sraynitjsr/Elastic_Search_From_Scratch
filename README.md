@@ -17,3 +17,13 @@
 #### 3. Field:
 ###### A document is composed of fields, each of which has a name and a value.
 ###### Fields can contain various types of data, such as text, numbers, dates, and more.
+
+#### 4. Mapping:
+###### The mapping defines the schema or structure of the index. It specifies the data type of each field and how it should be indexed and stored.
+###### Mapping can be explicit (user-defined) or dynamic (automatically inferred by Elasticsearch).
+
+#### 5. Shard:
+###### Elasticsearch uses the concept of shards to horizontally distribute and scale data.
+###### Each index is divided into one or more primary shards, and each primary shard may have zero or more replica shards.
+###### Shards allow Elasticsearch to distribute the data across nodes in a cluster.
+
