@@ -27,3 +27,10 @@
 ###### Each index is divided into one or more primary shards, and each primary shard may have zero or more replica shards.
 ###### Shards allow Elasticsearch to distribute the data across nodes in a cluster.
 
+#### 6. Inverted Index:
+###### Elasticsearch uses an inverted index for fast full-text search. The inverted index is a data structure that maps terms to the documents containing those terms.
+###### This structure allows Elasticsearch to quickly determine which documents match a given query.
+
+#### 7. Segments:
+###### Data in Elasticsearch is stored in segments, which are immutable and self-contained units.
+###### When new data is added or updated, Elasticsearch creates new segments. These segments are periodically merged to optimize search performance.
