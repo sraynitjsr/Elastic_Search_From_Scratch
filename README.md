@@ -9,3 +9,7 @@
 #### 1. Index:
 ###### An index is a logical namespace that maps to one or more primary shards and can have zero or more replica shards.
 ###### It is used to organize and store documents.
+
+#### 2. Document:
+###### A document is a JSON object stored in Elasticsearch. It is the basic unit of data.
+###### Each document is associated with a unique identifier called the "_id."
