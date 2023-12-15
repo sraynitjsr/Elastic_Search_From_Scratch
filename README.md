@@ -13,3 +13,7 @@
 #### 2. Document:
 ###### A document is a JSON object stored in Elasticsearch. It is the basic unit of data.
 ###### Each document is associated with a unique identifier called the "_id."
+
+#### 3. Field:
+###### A document is composed of fields, each of which has a name and a value.
+###### Fields can contain various types of data, such as text, numbers, dates, and more.
