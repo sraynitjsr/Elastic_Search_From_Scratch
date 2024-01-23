@@ -19,6 +19,8 @@ func main() {
 	}
 
 	indexDocument(es)
+	retrieveDocument(es, "1")
+
 }
 
 func indexDocument(es *elasticsearch.Client) {
@@ -34,4 +36,14 @@ func indexDocument(es *elasticsearch.Client) {
 	defer indexResponse.Body.Close()
 
 	fmt.Printf("Document indexed: %s\n", indexResponse)
+}
+
+func retrieveDocument(es *elasticsearch.Client, documentID string) {
+	getResponse, err := es.Get("my_index_name", documentID)
+	if err != nil {
+		log.Fatalf("Error retrieving document: %s", err)
+	}
+	defer getResponse.Body.Close()
+
+	fmt.Printf("Retrieved document: %s\n", getResponse.String())
 }
